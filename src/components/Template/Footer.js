@@ -10,11 +10,10 @@ function Footer() {
             <div className="text-center w-50 d-flex justify-content-end">
                 <stron>
                     <code className="text-white">
-                         Developed for  &lt;DEVTEC/&gt;
+                         Developed for  &lt;Softwenv/&gt;
                         in&nbsp;
                         <img src={bandera} style={{height: '1rem'}}/>
-                        <br/>
-                        {process.env.REACT_APP_VERSION}
+                       
                     </code>
                 </stron>
             </div>

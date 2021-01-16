@@ -251,3 +251,7 @@
     -webkit-text-stroke: .8px black;
     font-size: 2rem;
 }
+
+.w-90{
+    width:90%;
+}

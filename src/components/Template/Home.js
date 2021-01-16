@@ -5,9 +5,11 @@ import ImgHome from "../../img/home.jpg";
 import {trans} from "../../services/lang.service";
 import Titulo from "./Titulo";
 import baner from "../../img/breakfast-1869132_1920.jpg"
-import fondo from "../../img/FitNutrition.jpeg"
+import fondo from "../../img/FitNutrition.jpg"
 import fondo1 from "../../img/writing-pad-3193199_1920.jpg"
 import fondo2 from "../../img/yogurt-2104327_1920.jpg"
+import {esMovil} from "../../helpers/generalHelper";
+
 
 const Home = () => {
     const [control, setControl] = useGlobal('control');
@@ -15,14 +17,16 @@ const Home = () => {
         <Template>
             <div>
                 <br/>
-                <div className="d-flex justify-content-center w-100 rounded z-depth-1 swal2-warning">
-                    <div id="carouselExampleCaptions" className="carousel slide " style={{width: "84%"}}
+                <div className="d-flex justify-content-center">
+                    <div id="carouselExampleCaptions"
+                         className={`carousel slide   rounded z-depth-3 ${esMovil() ? "w-100" : "w-90 border-primary"}`}
                          data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                         </ol>
+
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                                 <img src={fondo} className="d-block" style={{width: "100%", height: "300px"}}
@@ -63,7 +67,7 @@ const Home = () => {
                                             <br/>
                                             <div>
                                                 <strong className="flex-wrap txt-acb-1-2">
-                                             Dale vida a tu cuerpo tomando dos litros de agua al dia
+                                                    Dale vida a tu cuerpo tomando dos litros de agua al dia
                                                 </strong>
                                             </div>
                                         </div>
@@ -84,10 +88,10 @@ const Home = () => {
                     </div>
                 </div>
                 <br/>
-                <div className="container d-flex justify-content-between">
-                    <div className="card  color-3 text-white mr-5 opacity-095 w-50">
+                <div className=" d-flex justify-content-around">
+                    <div className="card  color-3 text-white  opacity-095">
                         <div className="card-body">
-                            <strong className="txt-wcb-2" > Conocenos </strong>
+                            <strong className="txt-wcb-2"> Conocenos </strong>
                             <hr className="color-base"/>
                             <span>
                                 Somos un grupo de expertos de la salud dedicados a mejorar
@@ -99,12 +103,12 @@ const Home = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="card  color-3 text-white  opacity-095 w-50">
+                    <div className="card  color-3 text-white  opacity-095 ">
                         <div className="card-body">
-                            <strong className="txt-wcb-2" > Promociones </strong>
+                            <strong className="txt-wcb-2"> Promociones </strong>
                             <hr className="color-base"/>
                             <strong className="txt-wcb-2 text-justify">
-                             2 * 1 en consulta deportiva
+                                2 * 1 en consulta deportiva
                             </strong>
                             <span className="w-100 text-white d-flex justify-content-end">
                                 valido al 21 de enero de 2021
