@@ -89,7 +89,7 @@ const Home = () => {
                     </div>
                 </div>
                 <br/>
-                <div className="d-flex justify-content-center text-center w-90 bg-primary">
+                <div className="d-flex justify-content-center text-center w-90 flex-wrap">
                    <div className="d-flex justify-content-around">
                        <div className="card opacity-95">
                            <div>
