@@ -247,11 +247,38 @@
 }
 
 .txt-wcb-2{
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: .8px black;
+    text-fill-color: white;
+    text-stroke: .8px black;
     font-size: 2rem;
 }
 
 .w-90{
     width:90%;
+}
+
+.text-4{
+    font-size:4rem;
+}
+
+.text-3{
+    font-size:3rem;
+}
+
+.text-2{
+    font-size:2rem;
+}
+
+.text-1{
+    font-size:1rem;
+}
+
+.img-conocenos{
+    width: 50%;
+    height: 40%;
+}
+
+.text-flotante{
+    top: 15%;
+    left: 10%;
+    position: absolute;
 }

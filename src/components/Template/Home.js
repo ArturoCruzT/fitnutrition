@@ -8,6 +8,7 @@ import baner from "../../img/breakfast-1869132_1920.jpg"
 import fondo from "../../img/FitNutrition.jpg"
 import fondo1 from "../../img/writing-pad-3193199_1920.jpg"
 import fondo2 from "../../img/yogurt-2104327_1920.jpg"
+import conocenos from "../../img/contactanos.png"
 import {esMovil} from "../../helpers/generalHelper";
 
 
@@ -88,38 +89,65 @@ const Home = () => {
                     </div>
                 </div>
                 <br/>
-                <div className=" d-flex justify-content-around">
-                    <div className="card  color-3 text-white  opacity-095">
-                        <div className="card-body">
-                            <strong className="txt-wcb-2"> Conocenos </strong>
-                            <hr className="color-base"/>
-                            <span>
-                                Somos un grupo de expertos de la salud dedicados a mejorar
-                                la calidad de vida de las personas atraves de la alimentacion y el ejercicio.
-                            </span>
-                            <hr className="color-base"/>
-                            <a className="w-100 text-white d-flex justify-content-end" href="">
-                                {trans('general.verMas')}
-                            </a>
-                        </div>
-                    </div>
-                    <div className="card  color-3 text-white  opacity-095 ">
-                        <div className="card-body">
-                            <strong className="txt-wcb-2"> Promociones </strong>
-                            <hr className="color-base"/>
-                            <strong className="txt-wcb-2 text-justify">
-                                2 * 1 en consulta deportiva
-                            </strong>
-                            <span className="w-100 text-white d-flex justify-content-end">
-                                valido al 21 de enero de 2021
-                            </span>
-                            <hr className="color-base"/>
-                            <a className="w-100 text-white d-flex justify-content-end" href="">
-                                {trans('general.verMas')}
-                            </a>
-                        </div>
-                    </div>
+                <div className="d-flex justify-content-center text-center w-90 bg-primary">
+                   <div className="d-flex justify-content-around">
+                       <div className="card opacity-95">
+                           <div>
+                               {
+                                   esMovil() ?
+                                       <strong className="text-dark text-4">CONÓCENOS</strong> :
+                                       <div className="d-flex flex-column w-100">
+                                           <strong className="text-dark text-4 p-0 m-0">CONÓCENOS</strong>
+                                           <img src={conocenos} className="img-conocenos"/>
+
+                                       </div>
+                               }
+                           </div>
+                           <div>
+                               {
+                                   esMovil() ?
+                                       <div>
+
+                                       </div> :
+                                       <div className="text-justify  texto-grueso text-wrap text-1 ">
+                                           <strong className="text-dark"> Somos un grupo de expertos de la salud dedicados a
+                                               mejorar la calidad de vida de las personas atraves de la alimentacion y el
+                                               ejercicio
+                                           </strong>
+                                       </div>
+                               }
+                           </div>
+                       </div>
+                       <div className="card opacity-95">
+                           <div>
+                               {
+                                   esMovil() ?
+                                       <strong className="text-dark text-4">CONÓCENOS</strong> :
+                                       <div className="d-flex flex-column w-100">
+                                           <strong className="text-dark text-4 p-0 m-0">CONÓCENOS</strong>
+                                           <img src={conocenos} className="img-conocenos"/>
+
+                                       </div>
+                               }
+                           </div>
+                           <div>
+                               {
+                                   esMovil() ?
+                                       <div>
+
+                                       </div> :
+                                       <div className="text-justify  texto-grueso text-wrap text-1 ">
+                                           <strong className="text-dark"> Somos un grupo de expertos de la salud dedicados a
+                                               mejorar la calidad de vida de las personas atraves de la alimentacion y el
+                                               ejercicio
+                                           </strong>
+                                       </div>
+                               }
+                           </div>
+                       </div>
+                   </div>
                 </div>
+                <br/>
                 <br/>
             </div>
         </Template>
