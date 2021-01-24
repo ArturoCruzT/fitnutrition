@@ -9,7 +9,7 @@ function Template(props) {
     return (
         <div>
             <Navbar/>
-            <div style={{backgroundImage: `url(${fondo})`, height: '100vh'}} className=" w-100 ">
+            <div style={{backgroundImage: `url(${fondo})`, height: '100%'}} className=" w-100 ">
                 {/*{isLogged() ? props.children : <SinSesion/>}*/}
                 {props.children}
             </div>

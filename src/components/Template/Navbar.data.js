@@ -1,4 +1,4 @@
-import {FaWalking, FaNutritionix, FaAddressBook, FaBookOpen, FaLightbulb} from "react-icons/all";
+import {FaWalking, FaNutritionix, FaAddressBook, FaBookOpen  ,FaPercent, FaLightbulb} from "react-icons/all";
 
 /**
  * Estructura de Menu
@@ -32,6 +32,13 @@ export const ITEMS_IZQUIERDA = {
             visible: true,
             tipo: 'navlink',
             nlOptions: {to: '/nutriTips'}
+        },
+        {
+            keyLang: 'navbar.promociones',
+            icono: FaPercent,
+            visible: true,
+            tipo: 'navlink',
+            nlOptions: {to: '/promociones'}
         }
     ]
 };

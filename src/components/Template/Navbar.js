@@ -2,7 +2,7 @@ import React from 'react';
 import {useGlobal} from 'reactn';
 import {useState} from 'react';
 import {NavLink} from 'react-router-dom';
-import {FaHome} from "react-icons/fa";
+import {FaWeight} from "react-icons/fa";
 import {ModalLogin} from "./ModalLogin";
 import Avatar from "./Avatar";
 import {isLogged, getN, getTId, cerrarSesion} from "../../helpers/authHelper";
@@ -17,7 +17,7 @@ function Navbar({lang, lang_ok, permisos_ok, setPermisosOk}) {
     return (
         <nav className="navbar navbar-expand-lg  color-base navbar-dark py-0 text-small">
             <NavLink to="/" className="nav-link navbar-brand" href="#">
-                <span><FaHome/>{` ${process.env.REACT_APP_APP_NAME}`}<Env env={process.env.REACT_APP_ENV}/></span>
+                <span><FaWeight/>{` ${process.env.REACT_APP_APP_NAME}`}<Env env={process.env.REACT_APP_ENV}/></span>
             </NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -42,7 +42,7 @@ const Izquierda = () => {
 const Derecha = () => {
     return (<ul className="navbar-nav navbar-right">
         {(ITEMS_DERECHA.menus || []).map((menu, key) => <Menu menu={menu} key={key}/>)}
-        <SesionNav/>
+
     </ul>);
 }
 

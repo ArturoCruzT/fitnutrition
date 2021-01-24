@@ -10,6 +10,7 @@ const ROUTES = [
     {path: '/ideasNutritivas', component:SitioEnConstruccion},
     {path: '/nutriTips', component:SitioEnConstruccion},
     {path: '/contactanos', component:SitioEnConstruccion},
+    {path: '/promociones', component:SitioEnConstruccion},
     {path: '/admin/resgistro', component:Registro},
     {path: '/catalogos/generico/:catalogo_id', component:Generico},
     { exact: true, path: '/404', component: NotFound },

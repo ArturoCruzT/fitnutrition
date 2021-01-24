@@ -3,6 +3,7 @@ export const navbar = {
     ideasNutritivas: 'Ideas Nutritivas',
     nutriTips: 'Nutri Tips',
     contactanos: 'Contactanos',
+    promociones: 'Promociones',
 
     catalogos: 'Catálogos',
     cerrarSesion: 'Cerrar sesión',
